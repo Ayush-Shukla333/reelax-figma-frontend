@@ -1,26 +1,54 @@
 function Navbar() {
   return (
-    <header className="bg-white border-b border-gray-200">
-      <div className="max-w-[1280px] mx-auto px-4 py-3 flex items-center justify-between">
+    <header className="bg-white border-b border-[#E5E7EB]">
+      <div className="max-w-[1200px] mx-auto px-6 py-4 flex items-center justify-between">
 
         <input
           type="text"
           placeholder="Find influencers to collaborate with"
-          className="w-[320px] border border-gray-300 rounded-md px-4 py-2 text-sm outline-none"
+          className="
+          w-[360px]
+          h-[40px]
+          border
+          border-[#E5E7EB]
+          rounded-lg
+          px-4
+          text-sm
+          bg-[#F9FAFB]
+          outline-none
+          focus:border-[#2563EB]
+          "
         />
 
         <div className="flex items-center gap-3">
-          <button className="bg-yellow-400 text-white text-sm px-4 py-2 rounded-md">
+
+          <button className="
+            h-[36px]
+            px-4
+            bg-[#F59E0B]
+            text-white
+            text-sm
+            rounded-lg
+            font-medium
+          ">
             Upgrade
           </button>
 
-          <button className="bg-blue-600 text-white text-sm px-4 py-2 rounded-md">
+          <button className="
+            h-[36px]
+            px-4
+            bg-[#2563EB]
+            text-white
+            text-sm
+            rounded-lg
+            font-medium
+          ">
             + Create Campaign
           </button>
 
-          <div className="w-10 h-10 rounded-full bg-gray-300"></div>
-        </div>
+          <div className="w-9 h-9 rounded-full bg-[#E5E7EB]"></div>
 
+        </div>
       </div>
     </header>
   );

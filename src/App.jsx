@@ -7,7 +7,7 @@ function App() {
     <div className="min-h-screen bg-[#f5f7fb]">
       <Navbar />
 
-      <main className="max-w-[1120px] mx-auto px-4 py-8">
+      <main className="max-w-[1200px] mx-auto px-6 pt-8 pb-16">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
           
           <div className="lg:col-span-8">

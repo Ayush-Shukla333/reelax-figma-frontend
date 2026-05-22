@@ -2,55 +2,101 @@ import CouponSection from "./CouponSection";
 
 function Summary() {
   return (
-    <div className="bg-white rounded-xl p-6 sticky top-6 self-start">
+    <div className="
+      bg-white
+      rounded-2xl
+      p-6
+      border
+      border-[#E5E7EB]
+      shadow-sm
+      sticky
+      top-8
+      self-start
+    ">
 
-      <h2 className="text-2xl font-bold mb-6">
+      <h2 className="text-[20px] font-semibold mb-6 text-[#111827]">
         Order Summary
       </h2>
 
-      <div className="border rounded-xl p-5 mb-4">
-        <h3 className="text-4xl font-bold">
-          ₹4,999
-          <span className="text-base text-gray-500 font-normal">
-            /month
-          </span>
-        </h3>
+      {/* Plan Card */}
+      <div className="
+        border
+        border-[#DBEAFE]
+        rounded-xl
+        p-5
+        mb-6
+        bg-[#F8FAFF]
+      ">
 
-        <p className="text-gray-500 mt-2">
-          Includes 5,000 credits/mo.
-        </p>
+        <div className="flex justify-between items-start">
+
+          <div>
+            <h3 className="text-[26px] font-semibold text-[#111827]">
+              ₹4,999
+              <span className="text-sm text-[#6B7280] font-normal ml-1">
+                /month
+              </span>
+            </h3>
+
+            <p className="text-sm text-[#6B7280] mt-2">
+              Includes 5,000 credits/mo.
+            </p>
+          </div>
+
+          <div className="text-right">
+            <p className="text-[11px] uppercase tracking-wide text-[#2563EB] font-semibold">
+              Selected Plan
+            </p>
+
+            <h4 className="text-[18px] font-semibold text-[#111827] mt-1">
+              Startup
+            </h4>
+          </div>
+
+        </div>
       </div>
 
       <CouponSection />
 
+      {/* Pricing Breakdown */}
       <div className="mt-6 space-y-3 text-sm">
-
-        <div className="flex justify-between">
-          <span className="text-gray-500">Subtotal</span>
-          <span>₹14,999.00</span>
+        <div className="flex justify-between text-[#6B7280]">
+          <span>Subtotal</span>
+          <span className="text-[#111827]">₹14,999.00</span>
         </div>
 
-        <div className="flex justify-between">
-          <span className="text-gray-500">Tax (18% GST)</span>
-          <span>₹1,079.64</span>
+        <div className="flex justify-between text-[#6B7280]">
+          <span>Tax (18% GST)</span>
+          <span className="text-[#111827]">₹1,079.64</span>
         </div>
-
       </div>
 
-      <div className="flex justify-between mt-6 mb-6">
-        <span className="text-lg font-bold">
+      {/* Total */}
+      <div className="flex justify-between items-center mt-6 pt-6 border-t border-[#E5E7EB]">
+        <span className="text-[16px] font-semibold text-[#111827]">
           Total due today
         </span>
 
-        <span className="text-3xl font-bold text-blue-600">
-          16,078.64
+        <span className="text-[22px] font-semibold text-[#2563EB]">
+          ₹16,078.64
         </span>
       </div>
 
-      <button className="w-full bg-blue-600 text-white py-3 rounded-lg font-medium">
+      {/* Button */}
+      <button className="
+        w-full
+        h-[44px]
+        mt-6
+        bg-[#2563EB]
+        hover:bg-[#1D4ED8]
+        transition
+        text-white
+        rounded-lg
+        text-sm
+        font-medium
+      ">
         Proceed to Payment
       </button>
-
     </div>
   );
 }

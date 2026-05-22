@@ -1,25 +1,33 @@
-function InputField({ label, placeholder }) {
+function InputField({ label, placeholder, disabled }) {
   return (
-    <div className="flex flex-col gap-2">
-      <label className="text-sm font-medium text-gray-700">
+    <div className="flex flex-col gap-1.5">
+      <label className="text-[13px] font-medium text-[#374151]">
         {label}
       </label>
 
       <input
         type="text"
+        disabled={disabled}
         placeholder={placeholder}
         className="
-border border-gray-300
-rounded-lg
-px-4 py-3
-outline-none
-focus:border-blue-500
-focus:ring-2
-focus:ring-blue-100
-transition-all
-duration-200
-text-sm
-"
+        w-full
+        h-[44px]
+        px-4
+        rounded-lg
+        border
+        border-[#E5E7EB]
+        bg-[#F9FAFB]
+        text-[14px]
+        text-[#111827]
+        placeholder:text-[#9CA3AF]
+        outline-none
+        transition
+        focus:border-[#2563EB]
+        focus:ring-2
+        focus:ring-[#DBEAFE]
+        disabled:bg-[#F3F4F6]
+        disabled:text-[#9CA3AF]
+        "
       />
     </div>
   );
