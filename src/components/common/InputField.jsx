@@ -1,7 +1,7 @@
 function InputField({ label, placeholder, disabled }) {
   return (
-    <div className="flex flex-col gap-1.5">
-      <label className="text-[13px] font-medium text-[#374151]">
+    <div className="flex flex-col gap-2">
+      <label className="text-[14px] font-medium text-[#344054]">
         {label}
       </label>
 
@@ -10,23 +10,21 @@ function InputField({ label, placeholder, disabled }) {
         disabled={disabled}
         placeholder={placeholder}
         className="
-        w-full
-        h-[44px]
-        px-4
-        rounded-lg
-        border
-        border-[#E5E7EB]
-        bg-[#F9FAFB]
-        text-[14px]
-        text-[#111827]
-        placeholder:text-[#9CA3AF]
-        outline-none
-        transition
-        focus:border-[#2563EB]
-        focus:ring-2
-        focus:ring-[#DBEAFE]
-        disabled:bg-[#F3F4F6]
-        disabled:text-[#9CA3AF]
+          w-full
+          h-[44px]
+          px-4
+          rounded-lg
+          border
+          border-[#D0D5DD]
+          bg-[#F9FAFB]
+          text-[14px]
+          text-[#101828]
+          placeholder:text-[#98A2B3]
+          outline-none
+          focus:border-[#2563EB]
+          focus:ring-2
+          focus:ring-[#D1E9FF]
+          disabled:bg-[#F2F4F7]
         "
       />
     </div>

@@ -1,102 +1,76 @@
-import CouponSection from "./CouponSection";
-
 function Summary() {
   return (
-    <div className="
-      bg-white
-      rounded-2xl
-      p-6
-      border
-      border-[#E5E7EB]
-      shadow-sm
-      sticky
-      top-8
-      self-start
-    ">
+    <div className="space-y-2">
 
-      <h2 className="text-[20px] font-semibold mb-6 text-[#111827]">
-        Order Summary
-      </h2>
-
-      {/* Plan Card */}
+      {/* ORDER SUMMARY CARD */}
       <div className="
+        bg-white
+        rounded-[16px]
+        p-6
         border
-        border-[#DBEAFE]
-        rounded-xl
-        p-5
-        mb-6
-        bg-[#F8FAFF]
+        border-[#E4E7EC]
+        shadow-sm
       ">
 
-        <div className="flex justify-between items-start">
+        <h2 className="text-[20px] font-semibold text-[#101828] mb-6">
+          Order Summary
+        </h2>
 
-          <div>
-            <h3 className="text-[26px] font-semibold text-[#111827]">
-              ₹4,999
-              <span className="text-sm text-[#6B7280] font-normal ml-1">
-                /month
-              </span>
-            </h3>
+        {/* PLAN CARD */}
+        <div className="
+          bg-[#F9FAFB]
+          border
+          border-[#B2CCFF]
+          rounded-[12px]
+          p-4
+          shadow-[0px_1px_2px_rgba(16,24,40,0.06)]
+        ">
+          <div className="flex justify-between items-start">
 
-            <p className="text-sm text-[#6B7280] mt-2">
-              Includes 5,000 credits/mo.
-            </p>
+            <div>
+              <div className="flex items-baseline gap-2">
+                <span className="text-[30px] font-bold text-[#101828]">
+                  ₹4,999
+                </span>
+                <span className="text-[16px] text-[#667085]">
+                  /month
+                </span>
+              </div>
+
+              <p className="text-[16px] text-[#667085] mt-2 whitespace-nowrap">
+                Includes 5,000 credits/mo.
+              </p>
+            </div>
+
+            <div className="text-right">
+              <p className="text-[12px] font-semibold text-[#2E6BE6] uppercase tracking-[0.6px]">
+                SELECTED PLAN
+              </p>
+              <p className="text-[18px] text-left font-bold text-[#101828] mt-1">
+                Startup
+              </p>
+            </div>
+
           </div>
-
-          <div className="text-right">
-            <p className="text-[11px] uppercase tracking-wide text-[#2563EB] font-semibold">
-              Selected Plan
-            </p>
-
-            <h4 className="text-[18px] font-semibold text-[#111827] mt-1">
-              Startup
-            </h4>
-          </div>
-
-        </div>
-      </div>
-
-      <CouponSection />
-
-      {/* Pricing Breakdown */}
-      <div className="mt-6 space-y-3 text-sm">
-        <div className="flex justify-between text-[#6B7280]">
-          <span>Subtotal</span>
-          <span className="text-[#111827]">₹14,999.00</span>
         </div>
 
-        <div className="flex justify-between text-[#6B7280]">
-          <span>Tax (18% GST)</span>
-          <span className="text-[#111827]">₹1,079.64</span>
-        </div>
+        {/* UPGRADE BUTTON */}
+        <button className="
+          w-full
+          h-[44px]
+          mt-6
+          rounded-full
+          border
+          border-[#2E6BE6]
+          bg-[#EEF4FF]
+          text-[#2E6BE6]
+          text-[14px]
+          font-semibold
+        ">
+          ↑ Upgrade to Growth Plan
+        </button>
+
       </div>
-
-      {/* Total */}
-      <div className="flex justify-between items-center mt-6 pt-6 border-t border-[#E5E7EB]">
-        <span className="text-[16px] font-semibold text-[#111827]">
-          Total due today
-        </span>
-
-        <span className="text-[22px] font-semibold text-[#2563EB]">
-          ₹16,078.64
-        </span>
-      </div>
-
-      {/* Button */}
-      <button className="
-        w-full
-        h-[44px]
-        mt-6
-        bg-[#2563EB]
-        hover:bg-[#1D4ED8]
-        transition
-        text-white
-        rounded-lg
-        text-sm
-        font-medium
-      ">
-        Proceed to Payment
-      </button>
     </div>
   );
 }
